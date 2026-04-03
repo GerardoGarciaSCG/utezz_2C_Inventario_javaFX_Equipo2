@@ -66,7 +66,7 @@ public class ProductoService {
 
 
     private void validarProducto(Producto p )throws IllegalArgumentException{
-        if(p.getClass()== null || p.getClass().trim().isEmpty()){
+        if(p.getCodigo()== null || p.getCodigo().trim().isEmpty()){
             throw new IllegalArgumentException("El producto no puede estar vacio");
         }
         if(p.getNombre() == null || p.getNombre().trim().length()<3){
@@ -75,7 +75,7 @@ public class ProductoService {
         if (p.getPrecio() <=0){
             throw new IllegalArgumentException("El precio debe de ser mayor a 0");
         }
-        if(p.getStok() <0){
+        if(p.getStock() <0){
             throw new IllegalArgumentException("El stok no puede ser negativo");
         }
         if(p.getCategoria() == null || p.getCategoria().trim().isEmpty()){
