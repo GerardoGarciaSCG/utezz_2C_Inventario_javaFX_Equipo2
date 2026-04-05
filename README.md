@@ -1,1 +1,1 @@
-# utezz_2C_Inventario_javaFX_Equipo2
+# utezz_2C_Inventario_javaFX_Equipo2git rm -r --cached .idea
