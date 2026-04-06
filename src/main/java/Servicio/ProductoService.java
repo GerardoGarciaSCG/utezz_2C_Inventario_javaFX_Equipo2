@@ -56,7 +56,7 @@ public class ProductoService {
 
     // Se elima el producto
 
-    public void eliminarPrducto(Producto p) {
+    public void eliminarProducto(Producto p) {
         productos.remove(p);
         repository.guardar(productos);
     }
